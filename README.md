@@ -5,3 +5,4 @@
  - 完成 GitHub 倉庫建立
  - 嘗試 git clone 專案
  - 嘗試傳送檔案
+ - 新增 test.html
