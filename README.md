@@ -6,3 +6,6 @@
  - 嘗試 git clone 專案
  - 嘗試傳送檔案
  - 新增 test.html
+
+### 0922
+- 上傳 aboutme.html
