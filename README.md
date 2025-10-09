@@ -12,3 +12,6 @@
 
 ### 0923
 - fix aboutme.html
+
+### 1008
+- fix style css
