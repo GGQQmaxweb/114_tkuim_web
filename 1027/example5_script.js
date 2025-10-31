@@ -4,7 +4,7 @@
 const form = document.getElementById('full-form');
 const submitBtn = document.getElementById('submitBtn');
 const resetBtn = document.getElementById('resetBtn');
-
+const doAgreeCheckbox = document.getElementsByClassName('form-check-input')[0];
 function validateAllInputs(formElement) {
   let firstInvalid = null;
   const controls = Array.from(formElement.querySelectorAll('input, select, textarea'));
@@ -19,9 +19,16 @@ function validateAllInputs(formElement) {
   });
   return firstInvalid;
 }
-function Tos(from){
-  
-}
+
+doAgreeCheckbox.addEventListener('change', (event) => {
+  if (event.target.checked) {
+    const agree = confirm('Terms of Service:\n\nDo you agree to our terms and conditions for submitting this form?');
+    if (!agree) {
+      event.target.checked = false;
+    }
+  }
+});
+
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
   submitBtn.disabled = true;
