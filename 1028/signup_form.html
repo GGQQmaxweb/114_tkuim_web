@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Week07_Lab — 註冊表單</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <script src="signup_form.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>會員註冊（Week07_Lab）</h1>
+        <form id="signup" novalidate>
+            <label for="fullname">姓名
+                <input id="fullname" name="fullname" type="text" required aria-describedby="fullname-error" />
+                <p id="fullname-error" class="error" aria-live="polite"></p>
+            </label>
+
+            <label for="email">Email
+                <input id="email" name="email" type="email" required aria-describedby="email-error" />
+                <p id="email-error" class="error" aria-live="polite"></p>
+            </label>
+
+            <label for="phone">手機（10 碼）
+                <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="\d{10}" placeholder="0912345678"
+                    required aria-describedby="phone-error" />
+                <p id="phone-error" class="error" aria-live="polite"></p>
+            </label>
+
+            <div class="row">
+                <label for="password" class="small">密碼
+                    <input id="password" name="password" type="password" minlength="8" required
+                        aria-describedby="password-error password-strength-text" />
+                    <p id="password-error" class="error" aria-live="polite"></p>
+                </label>
+
+                <label for="confirm" class="small">確認密碼
+                    <input id="confirm" name="confirm" type="password" required aria-describedby="confirm-error" />
+                    <p id="confirm-error" class="error" aria-live="polite"></p>
+                </label>
+                <div class="password-strength">
+                    <div class="password-strength-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="field-with-meta">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                    <div>
+                        <strong>興趣（至少選 1）</strong>
+
+
+                        <div id="interests" class="interests" role="group" aria-describedby="interests-error"
+                            tabindex="0">
+                            <label class="tag"><input type="checkbox" name="interests" value="music" hidden> 音樂</label>
+                            <label class="tag"><input type="checkbox" name="interests" value="movie" hidden> 電影</label>
+                            <label class="tag"><input type="checkbox" name="interests" value="food" hidden> 美食</label>
+                            <label class="tag"><input type="checkbox" name="interests" value="travel" hidden> 旅遊</label>
+                            <label class="tag"><input type="checkbox" name="interests" value="code" hidden> 程式</label>
+                        </div>
+                        <p id="interests-error" class="error" aria-live="polite"></p>
+                    </div>
+
+                    <label style="display:flex;align-items:center;gap:10px">
+                        <input id="terms" name="terms" type="checkbox" required aria-describedby="terms-error" />
+                        我同意服務條款
+                    </label>
+                    <p id="terms-error" class="error" aria-live="polite"></p>
+
+                    <div>
+                        <div id="password-strength" class="strength" aria-hidden="false">
+                            <i></i>
+                        </div>
+                        <div id="password-strength-text" class="meta" aria-live="polite">密碼強度： — </div>
+                    </div>
+
+                    <div class="controls">
+                        <button id="submitBtn" type="submit">註冊</button>
+                        <button id="resetBtn" type="button" class="btn-secondary">重設</button>
+                        <div id="form-note" class="meta" style="margin-left:auto"></div>
+                    </div>
+        </form>
+    </div>
+    <div>
+        <p>
+            <strong>說明：</strong>本表單使用 HTML5 表單驗證功能，並搭配 JavaScript 強化使用者體驗與無障礙設計。請參考 Week07_Lab 說明文件了解更多細節。
+        </p>
+        
+    </div>
+</body>
+
+</html>
