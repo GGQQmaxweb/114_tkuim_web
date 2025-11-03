@@ -1,28 +1,5 @@
-  :root{--gap:10px;--accent:#2563eb;--danger:#dc2626;--ok:#16a34a}
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans TC',"Helvetica Neue",Arial;margin:24px;background:#f8fafc;color:#0f172a}
-  .container{max-width:720px;margin:0 auto;background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,.06)}
-  h1{font-size:1.4rem;margin:0 0 12px}
-  form{display:grid;grid-template-columns:1fr;gap:var(--gap)}
-  label{display:flex;flex-direction:column;font-size:.9rem}
-  input[type=text],input[type=email],input[type=tel],input[type=password]{padding:8px 10px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem}
-  .row{display:flex;gap:10px}
-  .small{width:160px}
-  p.error{margin:6px 0 0;color:var(--danger);font-size:.85rem;min-height:18px}
-  .field-with-meta{display:flex;flex-direction:column}
-  .interests{display:flex;flex-wrap:wrap;gap:8px;padding:8px;border:1px dashed #e2e8f0;border-radius:8px}
-  .tag{padding:6px 10px;border-radius:999px;border:1px solid #cbd5e1;cursor:pointer;user-select:none}
-  .tag.checked{background:var(--accent);color:#fff;border-color:transparent}
-  .controls{display:flex;gap:8px;align-items:center}
-  button{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}
-  button[disabled]{opacity:.6;cursor:not-allowed}
-  .btn-secondary{background:#e6edf8;color:#0f172a}
-  .loading{position:relative}
-  .loading::after{content:'';position:absolute;right:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spin .9s linear infinite}
-  @keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
-  .strength{height:8px;border-radius:6px;background:#e6eefc;overflow:hidden;margin-top:6px}
-  .strength > i{display:block;height:100%;width:0%;transition:width .2s}
-  .strength.weak > i{width:33% ;background:#f97316}
-  .strength.medium > i{width:66% ;background:#f59e0b}
-  .strength.strong > i{width:100% ;background:#10b981}
-  .meta{font-size:.85rem;color:#475569;margin-top:6px}
-  .success{padding:12px;border-radius:8px;background:#ecfdf5;border:1px solid #bbf7d0;color:#065f46}
+.field-with-meta {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
