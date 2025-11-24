@@ -1,4 +1,7 @@
 // docker/mongo-init.js
+
+db = db.getSiblingDB('week11');  // switch to week11
+
 db.createUser({
   user: 'week11-user',
   pwd: 'week11-pass',

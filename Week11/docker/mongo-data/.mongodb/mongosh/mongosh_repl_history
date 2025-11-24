@@ -1,0 +1,4 @@
+exit
+db.getUsers()
+use week11
+exit

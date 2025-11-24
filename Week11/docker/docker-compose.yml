@@ -13,3 +13,4 @@ services:
     volumes:
       - ./mongo-data:/data/db:Z          # 保留資料
       - ./mongo-init.js:/docker-entrypoint-initdb.d/init.js:ro
+
