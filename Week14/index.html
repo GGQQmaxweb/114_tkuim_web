@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淡江大學 Tamkang University</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts example (optional, finding similar fonts) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 1. Top Bar (Red) -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-left">
+                <a href="#" class="top-link"><span class="icon">::</span> 網站導覽</a>
+                <a href="#" class="top-link"><span class="icon">📅</span> 行事曆</a>
+                <a href="#" class="top-link"><span class="icon">🌐</span> English</a>
+            </div>
+            <div class="top-right">
+                <a href="#">新生</a>
+                <a href="#">學生</a>
+                <a href="#">國際生</a>
+                <a href="#">家長</a>
+                <a href="#">校友</a>
+                <a href="#">教職員</a>
+                <a href="#">訪客</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Main Header (White) -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-circle">
+                    <!-- Placeholder for TKU Seal -->
+                    <img src="https://via.placeholder.com/50x50?text=TKU" alt="TKU Seal">
+                </div>
+                <div class="logo-text">
+                    <h1>淡江大學</h1>
+                    <h2>Tamkang University</h2>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">招生資訊 <span class="dropdown-arrow">▼</span></a></li>
+                    <li><a href="#">獎助學金 <span class="dropdown-arrow">▼</span></a></li>
+                    <li><a href="#">學術單位</a></li>
+                    <li><a href="#">行政單位</a></li>
+                    <li><a href="#">認識淡江 <span class="dropdown-arrow">▼</span></a></li>
+                    <li><a href="#" class="search-icon">🔍</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 3. Hero Carousel -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="slide active"
+                style="background-image: url('https://via.placeholder.com/1920x600/003366/ffffff?text=TKU+Sustainability+Awards');">
+                <div class="slide-content">
+                    <div class="award-badges">
+                        <!-- Placeholder badges -->
+                    </div>
+                    <div class="slide-text">
+                        <h2 class="year">2025</h2>
+                        <h3 class="highlight">台灣永續大學獎</h3>
+                        <p>淡江大學榮獲</p>
+                        <ul>
+                            <li>🥇 台灣永續大學績優獎</li>
+                            <li>🥇 創新成長領袖獎</li>
+                        </ul>
+                        <p class="subtitle">展現永續與數位治理雙實力</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional slides can be added here -->
+        </div>
+        <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- 4. Content Sections (Example) -->
+    <main class="container main-content">
+        <div class="content-row">
+            <section class="news-section">
+                <div class="section-header">
+                    <h2>招生訊息</h2>
+                    <a href="#" class="more-link">MORE +</a>
+                </div>
+                <ul class="news-list">
+                    <li><span class="date">2023-11-20</span> <a href="#">114學年度碩士班考試入學簡章</a></li>
+                    <li><span class="date">2023-11-18</span> <a href="#">114學年度學士班特殊選才錄取名單</a></li>
+                    <li><span class="date">2023-11-15</span> <a href="#">境外生（外籍生、僑港澳生）申請入學</a></li>
+                    <li><span class="date">2023-11-10</span> <a href="#">進修學士班申請入學相關資訊</a></li>
+                </ul>
+            </section>
+            <section class="chair-section">
+                <h2>Tamkang Clement and Carrie Chair</h2>
+                <div class="chair-content">
+                    <p>The Tamkang Clement and Carrie Chair Lecture Series invites distinguished scholars to share their
+                        knowledge and research.</p>
+                    <button class="btn-primary">Read More</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <h3>淡江大學 Tamkang University</h3>
+                <p>📍 251301 新北市淡水區英專路151號</p>
+                <p>📞 +886-2-2621-5656</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Tamkang University. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#">FB</a> | <a href="#">IG</a> | <a href="#">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
