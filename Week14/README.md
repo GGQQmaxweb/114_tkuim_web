@@ -12,7 +12,7 @@ The project showcases a responsive web design that mimics the structure and styl
 - **Main Header**: Contains the university logo and a simplified navigation menu with dropdown indicators.
 - **Hero Carousel**: An interactive image slider that cycles through highlights (e.g., Sustainability Awards) automatically every 5 seconds. It also supports manual navigation via previous/next buttons.
 - **Content Sections**:
-  - **Admissions News**: A list of recent announcements.
+  - **Instant News (即時新聞)**: A tabbed interface displaying news cards with categories like Campus Focus, Awards, and Activities.
   - **Feature Highlight**: A dedicated section for special chairs or lectures.
 - **Responsive Footer**: Displays contact information and social media links.
 

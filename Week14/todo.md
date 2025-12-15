@@ -46,3 +46,8 @@
 - [x] Hamburger menu for mobile (Basic stack implemented)
 - [x] Stack layout for top bar items on small screens
 - [x] Adjust carousel text size for mobile
+
+## 8. Instant News Section
+- [x] Implement Tabbed Navigation (校園焦點, 獲獎榮譽, etc.)
+- [x] Implement News Grid (8 cards)
+- [x] Styling for News Cards (Image, Date, Title, Links)
