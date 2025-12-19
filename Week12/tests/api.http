@@ -18,3 +18,13 @@ Content-Type: application/json
 {
   "phone": "0911000111"
 }
+
+
+POST http://localhost:3001/api/signup
+Content-Type: application/json
+
+{
+  "name": "小明 Week12",
+  "email": "student12@example.com",
+  "phone": "0912345678"
+}
