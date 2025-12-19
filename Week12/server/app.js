@@ -3,12 +3,14 @@ import express from 'express';
 import cors from 'cors';
 import { connectDB } from './db.js';
 import signupRouter from './routes/signup.js';
+import authRouter from './routes/auth.js';
 
 const app = express();
 app.use(cors({ origin: process.env.ALLOWED_ORIGIN }));
 app.use(express.json());
 
 app.use('/api/signup', signupRouter);
+app.use('/api/auth', authRouter);
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Not Found' });

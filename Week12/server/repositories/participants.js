@@ -4,6 +4,7 @@ import { getDB } from '../db.js';
 
 const collection = () => getDB().collection('participants');
 
+
 export async function createParticipant(data) {
   const result = await collection().insertOne({
     ...data,
@@ -11,6 +12,10 @@ export async function createParticipant(data) {
     updatedAt: new Date()
   });
   return result.insertedId;
+}
+
+export async function findParticipantByEmail(email) {
+  return collection().findOne({ email });
 }
 
 export function listParticipants() {

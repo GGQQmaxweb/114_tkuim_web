@@ -9,13 +9,14 @@ import {
 
 const router = express.Router();
 
+
 router.post('/', async (req, res, next) => {
   try {
-    const { name, email, phone } = req.body;
-    if (!name || !email || !phone) {
+    const { name, email, phone, password } = req.body;
+    if (!name || !email || !phone || !password) {
       return res.status(400).json({ error: '缺少必要欄位' });
     }
-    const id = await createParticipant({ name, email, phone });
+    const id = await createParticipant({ name, email, phone, password });
     res.status(201).json({ id });
   } catch (error) {
     next(error);
